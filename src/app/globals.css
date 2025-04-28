@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-black;
+}
+
+.font-lrg {
+  @apply text-2xl sm:text-3xl lg:text-5xl font-normal leading-[1.1] bg-gradient-to-l from-[#D4FFEC] via-[#57F2CC] to-[#4596FB] bg-clip-text text-transparent;
+}
+
+.font-mdm {
+  @apply text-sm sm:text-lg leading-[1.5] font-medium text-[#FFFFFF];
+}
+
+.font-sml {
+  @apply text-xs sm:text-lg font-normal leading-[1.1] text-[#ABA7A7];
+}
+
