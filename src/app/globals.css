@@ -1,8 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import "tailwindcss";
+
+
+
 
 body {
   @apply bg-black;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
+
+.font-sf {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+
+
 
 .font-lrg {
   @apply text-2xl sm:text-3xl lg:text-5xl font-normal leading-[1.1] bg-gradient-to-l from-[#D4FFEC] via-[#57F2CC] to-[#4596FB] bg-clip-text text-transparent;
@@ -16,9 +29,13 @@ body {
   @apply text-xs sm:text-lg font-normal leading-[1.1] text-[#ABA7A7];
 }
 
+
+
 .bg-hero {
   @apply bg-[url('/images/herosection-background.png')];
 }
+
+
 
 
 
@@ -46,9 +63,35 @@ body {
 
 
 
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-30px);
+    opacity: 0.8;
+  }
+}
+
+.animate-float {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+
+
+
+
+
+
+
 
 .btn-primary {
-  @apply relative inline-block py-2 px-3 rounded-md font-medium text-[#FFFFFF] text-xs sm:text-lg overflow-hidden bg-transparent;
+  @apply relative inline-block py-2 px-4 rounded-md font-medium text-[#FFFFFF] text-xs sm:text-sm overflow-hidden bg-transparent;
 }
 
 .btn-primary::before {
