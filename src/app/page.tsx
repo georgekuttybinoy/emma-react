@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <>
 
-<div className="container min-h-screen h-full m-auto max-w-full bg-hero bg-center bg-cover relative z-20">
+<div className="container min-h-screen h-full m-auto max-w-full bg-hero bg-center bg-cover relative z-30">
 
     <Header />
 
-    <div className="flex flex-col items-center justify-center h-auto text-center sm:max-w-sm md:max-w-md lg:max-w-3xl m-auto z-20 relative"> 
+    <div className="flex flex-col items-center justify-center h-auto text-center sm:max-w-sm md:max-w-md lg:max-w-3xl m-auto relative z-30"> 
 
         <h1 className="font-lrg p-4 mb-6 sm:mb-2 animated-text-gradient">
           Accelerate your growth through 
@@ -31,6 +31,11 @@ export default function Home() {
       </div>
 
    </div>
+
+
+
+
+
 
 
 
@@ -127,7 +132,7 @@ export default function Home() {
 <p className="font-sml">Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. </p>
 </div>
      
-<div className="lg:col-start-3 p-4 max-w-56  h-auto border border-[#232323] rounded-md hover:scale-110 hover:bg-black hover:border-cyan-300 hover:shadow-cyan-300 hover:shadow-lg">
+<div className="lg:col-start-3 p-4 max-w-56  h-auto rounded-md hover:scale-110 hover:bg-black  hover:shadow-lg hover-gradient-border transition">
 <h1 className="font-mdm mt-2 mb-4">Franchise Management</h1>
 <p className="font-sml">Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. </p>
 </div>
@@ -159,7 +164,142 @@ export default function Home() {
 
 
 
+<div className="container w-full h-auto m-auto items-center justify-items-center p-4 sm:p-0 mt-40 relative">
 
+<div className="w-full max-w-5xl items-center justify-items-center h-auto border rounded-2xl border-[#232323] py-10 bg-gradient-to-b from-[#0d0d0d00] to-[#0D0D0D]">
+
+    <div className="flex flex-col items-center justify-center h-auto text-center w-full max-w-sm sm:max-w-lg md:max-w-lg m-auto"> 
+      <h1 className="p-2 mb-2 font-lrg">
+        Get Started Now!
+      </h1>
+      <p className="font-sml text-center">It only takes a moment of your time! Our dedicated team will respond to you promptly.</p>
+    </div>
+
+    <div className="flex flex-col h-auto sm:flex-row gap-4 w-full max-w-sm px-3 items-center justify-items-center mt-8 mx-auto">
+      <div className="w-full">
+      <GradientButton onClick={() => alert("button clicked!")}>
+      Call us
+      </GradientButton>
+      </div>
+      <div className="w-full">
+      <GradientButton onClick={() => alert("button clicked!")}>
+      Whats app now
+      </GradientButton>
+      </div>
+
+      {/* <div className="w-full max-w-66 m-auto h-auto sm:max-w-sm lg:translate-y-16">
+        <img className="h-auto w-full" src="/images/phone.png" alt="phone"/>
+      </div> */}
+
+    </div>
+
+
+  </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div className="flex flex-col container items-center justify-items-center m-0 w-full max-w-full h-auto relative">
+
+  <div className="container w-full h-auto m-auto items-center justify-items-center p-4 sm:p-0 mt-20">
+    <div className="w-full max-w-5xl items-center justify-items-center h-auto">
+
+    <div className="flex flex-col items-center justify-center h-auto text-center w-full max-w-sm sm:max-w-lg md:max-w-lg m-auto"> 
+      <h1 className="p-2 mb-2 font-lrg">
+        Our Pricing
+      </h1>
+    </div>
+
+<div className="container flex flex-col sm:flex-row w-full gap-16 mt-16">
+
+<div className="flex flex-col w-full max-w-lg">
+<p className="text-center sm:text-left mb-6 font-sml">Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. </p>
+<ul className="list-['-'] list-inside space-y-0 text-center sm:text-left font-sml">
+  <li>Streamline your lead capture </li>
+  <li>Streamline your lead capture </li>
+  <li>Streamline your lead capture </li>
+  <li>Streamline your lead capture </li>
+</ul>
+
+<div className="flex flex-row w-full max-w-lg mt-6 sm:gap-2 m-auto">
+
+<div className="flex flex-col m-auto">
+  <h1 className="font-lrg mb-4">10+</h1>
+  <h1 className="text-center font-mdm">Agency Partners</h1>
+</div>
+<div className="w-0.5 h-16 sm:h-28  mx-auto my-4 bg-gradient-to-b from-[#D4FFEC] via-[#57F2CC] to-[#4596FB] rounded-md"></div>
+<div className="flex flex-col m-auto">
+  <h1 className="font-lrg mb-4">50+</h1>
+  <h1 className="text-center font-mdm">Active Customers</h1>
+</div>
+
+</div>
+
+</div>
+
+
+<div className="flex flex-col sm:flex-row gap-6">
+
+  <div className="w-full max-w-md items-center justify-items-center h-auto border rounded-2xl border-[#232323] p-8 bg-gradient-to-b from-[#0d0d0d00] to-[#0D0D0D]">
+    <h1 className="text-center font-mdm">Trial </h1>
+    <hr className="h-0.5 max-w-32 mx-auto my-2 mb-4 border-0 bg-gradient-to-l from-[#D4FFEC] via-[#57F2CC] to-[#4596FB]" />  
+    <ul className="list-none text-center font-sml space-y-2">
+      <li>Free usage </li>
+      <li>All Permissions</li>
+      <li>3 Users</li>
+      <li>Lorem Ipsum </li>
+      <li>Lorem Ipsum </li>
+      <li>Lorem Ipsum </li>
+    </ul>
+    <div className="w-full flex justify-center h-auto max-w-sm sm:max-w-md  md:max-w-md lg:max-w-lg mt-4">
+    <GradientButton onClick={() => alert("button clicked!")}>
+    Start Now
+      </GradientButton>
+    </div>
+  </div>
+
+  <div className="w-full max-w-md items-center justify-items-center h-auto border rounded-2xl border-[#232323] p-8 bg-gradient-to-b from-[#0d0d0d00] to-[#0D0D0D]">
+    <h1 className="text-center font-mdm">Custom  Plan</h1>
+    <hr className="h-0.5 max-w-32 mx-auto my-2 mb-4 border-0 bg-gradient-to-l from-[#D4FFEC] via-[#57F2CC] to-[#4596FB]" />  
+      <ul className="list-none text-center  font-sml space-y-2">
+      <li>Free usage </li>
+      <li>All Permissions</li>
+      <li>Unlimited Users </li>
+      <li>Unlimited Storage </li>
+      <li>Third Party Integrations </li>
+      <li>Lorem Ipsum </li>
+    </ul>
+    <div className="w-full flex justify-center h-auto max-w-sm sm:max-w-md  md:max-w-md lg:max-w-lg mt-4">
+    <GradientButton onClick={() => alert("button clicked!")}>
+    Contact for Price
+      </GradientButton>
+    </div>
+  </div>
+  
+</div>
+
+</div>
+
+</div>
+
+  </div>
+  
+  <div className="w-full flex items-center justify-center max-w-sm m-0 overflow-hidden h-full sm:max-w-3xl absolute -z-50 top-96 sm:top-32 left-0">
+    <div className="w-84 h-84 sm:w-2xl sm:h-[32rem]  rounded-full bg-[radial-gradient(circle,_#0E7BF8_0%,_#0E7BF8cc_30%,_transparent_90%)] blur-3xl opacity-20"></div>
+  </div>
+
+</div>
 
 
   </>

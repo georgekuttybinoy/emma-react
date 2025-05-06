@@ -9,7 +9,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full bg-transparent top-0 left-0 z-50">
+    <header className="w-full bg-transparent top-0 left-0 relative z-50">
       <div className="max-w-5xl mx-auto flex justify-between items-center p-4">
       
         <Link href="/" className="font-lrg">
