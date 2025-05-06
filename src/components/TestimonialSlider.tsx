@@ -52,7 +52,7 @@ export default function TestimonialSlider() {
         <div className="flex flex-col w-full max-w-2xl px-2">
      
           <p className="text-center text-sm sm:text-2xl text-[#ABA7A7] mb-2 font-sf italic">
-          <span className="inline-block align-middle font-bold text-4xl sm:text-8xl bg-gradient-to-r from-[#D4FFEC] via-[#57F2CC] to-[#4596FB] bg-clip-text text-transparent  font-sf mr-2">" </span>            The reason why I only work with DNS? Simple:
+          <span className="inline-block align-middle font-bold text-4xl sm:text-8xl bg-gradient-to-r from-[#D4FFEC] via-[#57F2CC] to-[#4596FB] bg-clip-text text-transparent  font-sf mr-2">&ldquo; </span>            The reason why I only work with DNS? Simple:
             <span className="text-white text-lg sm:text-3xl break-words block font-sf italic">“{quote}”</span>
           </p>
         </div>

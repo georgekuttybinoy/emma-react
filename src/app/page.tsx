@@ -1,5 +1,4 @@
 'use client';
-import Image from "next/image";
 import Header from "@/components/Header";
 import GradientButton from "@/components/GradientButton";
 import TestimonialSlider from '@/components/TestimonialSlider';
@@ -335,7 +334,7 @@ export default function Home() {
   <h1 className="text-center sm:text-left p-2 mb-2 font-lrg">
     Do not a miss a lead by any chance. access our CRM from any device 
   </h1>
-  <p className="text-center sm:text-left font-sml mb-6">Whether you're traveling without a laptop or simply on the go, there's no need to worry when using Emma. Our software is accessible on mobile phones, tablets, laptops, and desktop devices. </p>
+  <p className="text-center sm:text-left font-sml mb-6">Whether you&rsquo;re traveling without a laptop or simply on the go, there&rsquo;s no need to worry when using Emma. Our software is accessible on mobile phones, tablets, laptops, and desktop devices. </p>
   <div className="w-full flex justify-center sm:justify-start h-auto">
   <GradientButton className="w-full max-w-36" onClick={() => alert("button clicked!")}>
     Try Now
