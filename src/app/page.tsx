@@ -5,11 +5,11 @@ import GradientButton from "@/components/GradientButton";
 import TestimonialSlider from '@/components/TestimonialSlider';
 import Footer from '@/components/Footer';
 import GradientText from '@/components/GradientText';
+import ScrollToBottomButton from '@/components/ScrollToBottomButton';
 
 export default function Home() {
   return (
     <>
-
 <div className="container min-h-screen h-full m-auto max-w-full bg-hero bg-center bg-cover relative z-30">
 
     <Header />
@@ -32,7 +32,7 @@ export default function Home() {
       <div className="w-full flex items-center justify-center justify-items-center max-w-sm m-0 overflow-hidden h-full sm:max-w-3xl absolute z-10 top-0 sm:top-0 sm:right-70">
         <div className="w-54 h-84 sm:w-2xl sm:h-[32rem] -translate-y-60 rounded-full bg-[radial-gradient(circle,_#0E7BF8_0%,_#0E7BF8cc_30%,_transparent_90%)] blur-3xl opacity-40"></div>
       </div>
-
+      <ScrollToBottomButton />
    </div>
 
 
@@ -226,11 +226,11 @@ export default function Home() {
       </h1>
     </div>
 
-<div className="container flex flex-col sm:flex-row w-full gap-16 mt-16">
+<div className="container flex flex-col lg:flex-row w-full gap-16 mt-4 sm:mt-16">
 
-<div className="flex flex-col w-full max-w-lg">
-<p className="text-center sm:text-left mb-6 font-sml">Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. </p>
-<ul className="list-['-'] list-inside space-y-0 text-center sm:text-left font-sml">
+<div className="flex flex-col w-full max-w-lg m-auto">
+<p className="text-center lg:text-left mb-6 font-sml">Streamline your lead capture from multiple sources such as Facebook, Google Ads, your website, and more, ensuring no lead goes unnoticed. </p>
+<ul className="list-['-'] list-inside space-y-0 text-center lg:text-left font-sml">
   <li>Streamline your lead capture </li>
   <li>Streamline your lead capture </li>
   <li>Streamline your lead capture </li>
@@ -243,14 +243,14 @@ export default function Home() {
 <GradientText
         text="10+"
       />
-  <h1 className="text-center font-mdm break-all">Agency Partners</h1>
+  <h1 className="text-center font-mdm font-bold break-all">AGENCY PARTNERS</h1>
 </div>
 <div className="w-0.5 h-16 sm:h-28  mx-auto my-4 bg-gradient-to-b from-[#D4FFEC] via-[#57F2CC] to-[#4596FB] rounded-md"></div>
 <div className="flex flex-col m-auto">
 <GradientText
         text="50+"
       />
-  <h1 className="text-center font-mdm break-all">Active Customers</h1>
+  <h1 className="text-center font-mdm font-bold break-all">ACTIVE CUSTOMERS</h1>
 </div>
 
 </div>
@@ -258,7 +258,7 @@ export default function Home() {
 </div>
 
 
-<div className="flex flex-col sm:flex-row gap-2">
+<div className="flex flex-col sm:flex-row gap-3">
 
   <div className="w-full max-w-md items-center justify-items-center h-auto border rounded-2xl border-[#232323] p-8 bg-gradient-to-b from-[#0d0d0d00] to-[#0D0D0D]">
     <h1 className="text-center font-mdm">Trial </h1>
@@ -426,7 +426,7 @@ export default function Home() {
 
 
 
-<div className="container w-full max-w-5xl h-auto  m-auto justify-items-center p-4 sm:p-0 mt-20 flex flex-col gap-4 sm:flex-row">
+<div className="container w-full max-w-5xl h-auto  m-auto justify-items-center p-4 sm:p-0 mt-20 flex flex-col gap-4 lg:flex-row">
 
 
     <div className="w-full max-w-sm mx-auto items-center justify-items-center h-auto border rounded border-[#232323] p-4 sm:p-14 bg-gradient-to-b from-[#0d0d0d00] to-[#0D0D0D]">
@@ -553,7 +553,7 @@ export default function Home() {
 
         <div className="w-full m-auto flex flex-col sm:flex-row gap-12 mt-5">
             <div className="w-full m-auto">
-          <label className="block font-mdm mb-1" htmlFor="name">First Name*</label>
+          <label className="block font-mdm mb-1" htmlFor="name">Numbers</label>
           <input type="number" id="Numbers" name="Numbers" placeholder="Number"
                  className="w-full font-mdm border-b border-gray-300 focus:outline-none focus:border-cyan-300 bg-transparent" />
         </div>
